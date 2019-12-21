@@ -14,7 +14,7 @@ rectsound  = abs(sound);
 cenv = filtfilt(b, a, rectsound);
 %downsenv = resample(cenv, (1:length(cenv))/soundf, envf);
 downsenv=cenv;
-downsenv(downsenv<0) =0;
+downsenv(downsenv<0) = 0;
 
 %edit Oana Cucu: no downsampling needed for my experiments
 
